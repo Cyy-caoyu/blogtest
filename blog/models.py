@@ -46,7 +46,6 @@ class Post(models.Model):
 
         super().save(*args, **kwargs)
 
-
     class Meta:
         verbose_name = '文章'
         verbose_name_plural = verbose_name
