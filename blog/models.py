@@ -46,7 +46,6 @@ class Post(models.Model):
 
         super().save(*args, **kwargs)
 
-    created_time=models.DateTimeField()
 
     class Meta:
         verbose_name = '文章'
