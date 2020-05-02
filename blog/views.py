@@ -6,13 +6,13 @@ from markdown.extensions.toc import TocExtension
 from django.shortcuts import render,get_object_or_404
 from .models import Post
 from django.views.generic import ListView, DetailView
-
+from django.core.paginator import Paginator
 
 class IndexView(ListView):
     model = Post
     template_name = 'blog/index.html'
     context_object_name = 'post_list'
-
+    paginate_by = 10;
 
 class PostDetailView(DetailView):
     # 这些属性的含义和 ListView 是一样的
