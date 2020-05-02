@@ -12,7 +12,7 @@ class IndexView(ListView):
     model = Post
     template_name = 'blog/index.html'
     context_object_name = 'post_list'
-    paginate_by = 10;
+    paginate_by = 3;
 
 class PostDetailView(DetailView):
     # 这些属性的含义和 ListView 是一样的
