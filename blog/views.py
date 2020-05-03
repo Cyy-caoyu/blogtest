@@ -8,7 +8,7 @@ from .models import Post
 from django.views.generic import ListView, DetailView
 from django.core.paginator import Paginator
 from django.contrib import messages
-
+from django.db.models
 
 class IndexView(ListView):
     model = Post
